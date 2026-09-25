@@ -1,10 +1,151 @@
 
-
-h1 {
-    color: rgb(172, 192, 172);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.color_rosa {
-    color: rgb(122, 112, 114);
+body {
+    /* Color de fondo */
+    background-color: #f1f5f9;
+    /* Tipografía principal */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* Color de texto */
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+                             NAVEGACIÓN
+   ========================================================================== */
+
+.header-principal {
+    /* Color primario */
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.navegacion {
+    margin-top: 10px;
+}
+
+.lista-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/* ==========================================================================
+                      SECCIÓN PRINCIPAL Y CONTENIDO
+   ========================================================================== */
+
+.contenido-principal {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.seccion-hero, 
+.seccion-historia, 
+.seccion-productos,
+.seccion-nosotros {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.subtitulo-seccion {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+}
+
+
+/* ==========================================================================
+   4. TARJETAS DE PRODUCTOS
+   ========================================================================== */
+
+.producto {
+    background-color: #f8fafc;
+    border-left: 4px solid #2563eb;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.titulo-producto {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0f172a;
+}
+
+.precio-producto {
+    font-weight: 700;
+    color: #059669;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+                        PIE DE PÁGINA 
+   ========================================================================== */
+
+.pie-pagina {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.info-contacto {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+.lista-redes {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.item-red {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+    padding: 5px
 }
 
