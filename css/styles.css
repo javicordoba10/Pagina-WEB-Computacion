@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f1f5f9;
+    background-color: #e6f0fa;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #1e293b;
@@ -52,39 +52,34 @@ h1 {
     padding: 0 20px;
 }
 
-.seccion-hero, 
-.seccion-galeria, 
-.seccion-ofertas,
-.seccion-contacto,
-.seccion-nosotros {
+.seccion-comentario {
     background-color: #ffffff;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.subtitulo-seccion {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: #0f172a;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #2563eb;
-    padding-bottom: 5px;
-}
+}   
 
 
-/* ==========================================================================
+/* ===================================================================
                       TARJETAS DE PRODUCTOS
    ========================================================================== */
 
+.seccion-articulos {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;       
+    justify-content: center; 
+}
+
 .producto {
-    background-color: #f8fafc;
+    background-color: #f9fbfd;
     border-left: 4px solid #2563eb;
     padding: 15px;
     margin-top: 15px;
     border-radius: 4px;
+    flex: 1 1 250px;
+    max-width: 320px;
 }
 
 .titulo-producto {
@@ -99,6 +94,13 @@ h1 {
     color: #059669;
     font-size: 1.1rem;
     margin-top: 5px;
+}
+
+.imagen-producto {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
 }
 
 /* ==========================================================================
