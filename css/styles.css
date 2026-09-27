@@ -6,12 +6,9 @@
 }
 
 body {
-    /* Color de fondo */
     background-color: #f1f5f9;
-    /* Tipografía principal */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    /* Color de texto */
     color: #1e293b;
     line-height: 1.6;
 }
@@ -21,14 +18,13 @@ body {
    ========================================================================== */
 
 .header-principal {
-    /* Color primario */
     background-color: #0f172a;
     color: #ffffff;
     padding: 20px;
     text-align: center;
 }
 
-.titulo-principal {
+h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 2.2rem;
@@ -36,15 +32,13 @@ body {
     color: #ffffff;
 }
 
-.navegacion {
-    margin-top: 10px;
-}
-
 .lista-nav {
+    margin-top: 10px;
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 15px;
+    background-color: #031744;
 }
 
 
@@ -59,8 +53,9 @@ body {
 }
 
 .seccion-hero, 
-.seccion-historia, 
-.seccion-productos,
+.seccion-galeria, 
+.seccion-ofertas,
+.seccion-contacto,
 .seccion-nosotros {
     background-color: #ffffff;
     padding: 25px;
@@ -81,7 +76,7 @@ body {
 
 
 /* ==========================================================================
-   4. TARJETAS DE PRODUCTOS
+                      TARJETAS DE PRODUCTOS
    ========================================================================== */
 
 .producto {
@@ -124,28 +119,20 @@ body {
     font-size: 1.1rem;
     color: #ffffff;
     margin-bottom: 10px;
-}
+}   
 
 
 .lista-redes {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 0;
 }
 
-.item-red {
-    font-size: 0.9rem;
-    color: #000000;
+.logo-red {
+    width: 40px;
+    height: 40px;
 }
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #0f172a;
-    margin-bottom: 10px;
-    padding: 5px
-}
-

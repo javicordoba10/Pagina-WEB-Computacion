@@ -12,14 +12,14 @@
 </head>
 <body>
     <header class="header-principal">
-        <h1 class="titulo-principal">Productos Electronicos</h1>
-        <nav class="navegacion">         
+        <h1>Productos Electronicos</h1>
+        <nav">         
             <ul class="lista-nav">
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>                   
+                <li><a href="./index.html" style="color: #ebe4f3;">Inicio </a></li>
+                <li><a href="./pages/ofertas.html" style="color: #ebe4f3;">Ofertas</a></li>
+                <li><a href="./pages/galeria.html" style="color: #ebe4f3;">Galeria</a></li>
+                <li><a href="./pages/nosotros.html" style="color: #ebe4f3;">Nosotros</a></li>
+                <li><a href="./pages/contacto.html" style="color: #ebe4f3;">Contacto</a></li>                   
             </ul>   
         </nav>  
     </header>
@@ -65,7 +65,7 @@
     
 
 
-    <footer class="pie-de-pagina">
+    <footer class="pie-pagina">
 
         <section class="info-contacto">
             <h3>De dónde somos</h3>
@@ -75,12 +75,16 @@
         <section class="redes-sociales">
             <h3>Encontranos en:</h3>
             <ul class="lista-redes">
-                <li class="item-red">WhatsApp</li>
-                <li class="item-red">Facebook</li>
-                <li class="item-red">Instagram</li>
+                <li><a href="https://wa.me/123456789" target="_blank"><img src="./assets/img/Logos/whatsapp.png" alt="Logo de Whatsapp" class="logo-red" title="Whatsapp"></a></li>
+                <li><a href="https://facebook.com" target="_blank"><img src="./assets/img/Logos/facebook.png" alt="Logo de Facebook" class="logo-red" title="Facebook"></a></li>
+                <li><a href="https://instagram.com" target="_blank"><img src="./assets/img/Logos/instagram.png" alt="Logo de Instagram" class="logo-red" title="Instagram"></a></li>
             </ul>
         </section>
+        <p>&copy;<span id="year"></span> Productos Electrónicos - Todos los derechos reservados.</p>
+        <p>Creado Por Javier Cordoba</p>
     </footer>
-        
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();   
+    </script>
 </body>
 </html>

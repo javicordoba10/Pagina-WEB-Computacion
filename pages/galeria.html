@@ -7,19 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 <body>
     <header class="header-principal">
-        <h1>Productos Electronicos</h1>
-        <nav class="navegacion">         
-            <ul class="lista de navegacion">
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/galeria.html">Galeria</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>                   
+        <h1>Galería de Imágenes</h1>
+        <nav>         
+            <ul class="lista-nav">
+                <li><a href="../index.html" style="color: #ffffff;">Inicio</a></li>
+                <li><a href="../pages/ofertas.html" style="color: #ffffff;">Ofertas</a></li>
+                <li><a href="../pages/galeria.html" style="color: #ffffff;">Galeria</a></li>
+                <li><a href="../pages/nosotros.html" style="color: #ffffff;">Nosotros</a></li>
+                <li><a href="../pages/contacto.html" style="color: #ffffff;">Contacto</a></li>                   
             </ul>   
         </nav>  
     </header>
@@ -34,8 +34,24 @@
     </main>
 
     <footer class="pie-pagina">
-        <p class="texto-footer">© 2026 Productos Electrónicos - Todos los derechos reservados.</p>
-    </footer>
+        <section class="info-contacto">
+            <h3>De dónde somos</h3>
+            <p>Córdoba, Jesús María</p>
+        </section>
 
+        <section class="redes-sociales">
+            <h3>Encontranos en:</h3>
+            <ul class="lista-redes">
+                <li><a href="https://wa.me/123456789" target="_blank"><img src="../assets/img/Logos/whatsapp.png" alt="Logo de Whatsapp" class="logo-red" title="Whatsapp"></a></li>
+                <li><a href="https://facebook.com" target="_blank"><img src="../assets/img/Logos/facebook.png" alt="Logo de Facebook" class="logo-red" title="Facebook"></a></li>
+                <li><a href="https://instagram.com" target="_blank"><img src="../assets/img/Logos/instagram.png" alt="Logo de Instagram" class="logo-red" title="Instagram"></a></li>
+            </ul>
+        </section>
+        <p>&copy;<span id="year"></span> Productos Electrónicos - Todos los derechos reservados.</p>
+        <p>Creado Por Javier Cordoba</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();   
+    </script>
 </body>
 </html>
