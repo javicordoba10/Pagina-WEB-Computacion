@@ -6,7 +6,7 @@
     <title>Productos Electronicos - Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 
 </head>
@@ -18,11 +18,11 @@
         <h1>Contactos</h1>
         <nav>         
             <ul class="lista-nav">
-                <li><a href="../index.html" style="color: #ffffff;">Inicio</a></li>
-                <li><a href="./ofertas.html" style="color: #ffffff;">Ofertas</a></li>
-                <li><a href="./galeria.html" style="color: #ffffff;">Galeria</a></li>
-                <li><a href="./nosotros.html" style="color: #ffffff;">Nosotros</a></li>
-                <li><a href="./contacto.html" style="color: #ffffff;">Contacto</a></li>                   
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html" class="activo">Contacto</a></li>                   
             </ul>   
         </nav>  
     </header>
@@ -33,28 +33,70 @@
     <main class="contenido-principal">
         <section class="seccion-comentario"> 
             <p>Lo ultimo en productos tecnologicos.</p>
-            <p>Conoce los ultimos productos tecnologicos que tenemos para vos.</p>
+            <p>🚚 Envíos gratis a todo el país | 💳 3 y 6 cuotas sin interés | 🛡️ Garantía oficial</p>
         </section>
 
         <section class="seccion-contacto">
             <h2>Ponte en Contacto</h2>
             <p>Si tienes dudas, consultas o quieres cotizar un producto, no dudes en escribirnos.</p>
+        </section>
 
+        <section>
             <article class="formulario-contacto">
                 <h3>Envíanos un Mensaje</h3>
-                <p>Completa el siguiente formulario y un representante te responderá a la brevedad.</p>
-                    <select>
-                            <form>
+                <p>Completa el siguiente formulario y un asesor técnico te responderá a la brevedad.</p>
 
-                            </form>
-                    </select>
+                <form action="#" method="POST" class="form-grid">
+                    
+                    <div class="campo-grupo">
+                        <label for="nombre">Nombre y Apellido *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Javier Córdoba" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 3525 ...">
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="interes">Producto de interés / Consulta</label>
+                        <select id="interes" name="interes">
+                            <option value="" disabled selected>Selecciona una opción...</option>
+                            <option value="notebooks">Notebooks y Portátiles</option>
+                            <option value="monitores">Monitores y Pantallas</option>
+                            <option value="armado-pc">Armado y Presupuesto de PC</option>
+                            <option value="servicio-tecnico">Servicio Técnico y Garantía</option>
+                            <option value="otro">Otras consultas</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-grupo campo-completo">
+                        <label for="mensaje">Detalle de tu consulta *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí los componentes o la duda que tengas..." required></textarea>
+                    </div>
+
+                    <div class="campo-suscripcion campo-completo">
+                        <input type="checkbox" id="novedades" name="novedades">
+                        <label for="novedades">Deseo recibir ofertas y promociones semanales por email</label>
+                    </div>
+
+                    <div class="boton-formulario">
+                        <button type="submit">Enviar Mensaje</button>
+                    </div>
+                </form>
             </article>
-
-            <div class="info-horarios">
-                <h3>Atención al Cliente y Ubicación</h3>
-                <p>Atendemos de Lunes a Viernes de 9:00 a 18:00 hs. Podés visitarnos en nuestra sucursal principal.</p>
-            </div>
         </section>
+
+
+        <div class="info-horarios">
+            <h3>Atención al Cliente y Ubicación</h3>
+            <p>Encontranos de Lunes a Viernes de 9:00 a 18:00 hs. Podés visitarnos en nuestra sucursal principal.</p>
+        </div>
     </main>
 
 <!-- -------------------- pie de pagina -------------------- -->
