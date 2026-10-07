@@ -330,6 +330,66 @@ h1 {
     2. GALERIA 
 =================*/
 
+.seccion-galeria {
+    margin-top: 30px;
+}
+
+.seccion-galeria > p {
+    color: #64748b;
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
+
+.categoria-galeria {
+    margin-bottom: 40px;
+}
+
+.categoria-galeria h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 15px;
+    border-left: 4px solid #2563eb;
+    padding-left: 10px;
+}
+
+.grilla-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.item-galeria {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: #ffffff;
+    transition: transform 0.25s ease;
+}
+
+.item-galeria figcaption {
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #334155;
+}
 
 /*================
     3. NOSOTROS 
