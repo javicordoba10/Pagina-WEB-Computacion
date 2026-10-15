@@ -120,16 +120,38 @@ h1 {
 .seccion-comentario {
     background: linear-gradient(135deg, #1e293b, #0f172a);
     color: #ffffff;
-    padding: 20px 25px;
+    padding: 16px 20px;
     margin-bottom: 30px;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     text-align: center;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-} 
+}
+
+.item-beneficio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+
+.beneficio-envio::before {
+    content: "🚚";
+    font-size: 1.4rem;
+}
+.beneficio-cuotas::before {
+    content: "💳";
+    font-size: 1.4rem;
+}
+.beneficio-garantia::before {
+    content: "🛡️";
+    font-size: 1.4rem;
+}
 
 .contenido-principal h2 {
     font-size: 1.8rem;
@@ -401,19 +423,33 @@ h1 {
 
 .tarjeta-nosotros {
     background-color: #ffffff;
-    margin: 15px 0;
-    border-radius: 8px;
-    padding: 24px;
-    flex: 1 1 280px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    border: 2px solid #e2e8f0;
+    border: 1px solid #e2e8f0;
     border-left: 4px solid #2563eb;
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tarjeta-nosotros:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+    border-left-color: #1d4ed8;
 }
 
 .tarjeta-nosotros h3 {
+    font-family: 'Montserrat', sans-serif;
     color: #0f172a;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.tarjeta-nosotros p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
 .ubicacion {
