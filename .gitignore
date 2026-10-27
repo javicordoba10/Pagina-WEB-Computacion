@@ -1,0 +1,20 @@
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores de código
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+
+# Archivos de caché y compilación
+*.css.map
+.sass-cache/
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
