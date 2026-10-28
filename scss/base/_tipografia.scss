@@ -1,0 +1,33 @@
+h1 {
+    font-family: $font-secundaria;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: $color-surface;
+    margin: 0;
+}
+
+.contenido-principal {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: $font-secundaria;
+    color: $color-dark;
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $color-dark;
+        margin-bottom: 10px;
+        border-bottom: 3px solid $color-primary;
+        padding-bottom: 0.5px;
+        display: inline-block;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+}

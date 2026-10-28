@@ -1,0 +1,18 @@
+.navbar {
+    .navbar-brand {
+        font-family: $font-secundaria;
+    }
+
+    .nav-link {
+        color: $color-surface;
+        transition: color $transicion-base;
+
+        &:hover {
+            color: lighten($color-primary, 20%);
+        }
+
+        &.active {
+            font-weight: 600;
+        }
+    }
+}

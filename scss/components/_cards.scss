@@ -1,0 +1,129 @@
+// Tarjetas de Producto
+.producto,
+.producto-oferta {
+    background-color: $color-surface;
+    border: 1px solid $color-border;
+    border-left: 4px solid $color-primary;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: $sombra-md;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $sombra-lg;
+        border-color: $color-border-input;
+    }
+
+    .titulo-producto {
+        font-family: $font-secundaria;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: $color-dark;
+    }
+
+    .precio-producto {
+        font-weight: 700;
+        color: $color-success;
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+
+    .imagen-producto {
+        width: 100%;
+        height: 180px;
+        margin: 15px 0;
+        object-fit: contain;
+        transition: transform $transicion-base;
+    }
+}
+
+// Tarjeta de Oferta
+.producto-oferta {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "OFERTA";
+        position: absolute;
+        top: 15px;
+        right: -30px;
+        background-color: $color-danger;
+        color: $color-surface;
+        font-size: 0.65rem;
+        font-weight: bold;
+        padding: 4px 30px;
+        transform: rotate(45deg);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Tarjeta Nosotros
+.tarjeta-nosotros {
+    background-color: $color-surface;
+    border: 1px solid $color-border;
+    border-left: 4px solid $color-primary;
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+    transition: transform $transicion-base, box-shadow $transicion-base, border-color $transicion-base;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+        border-left-color: $color-primary-hover;
+    }
+
+    h3 {
+        font-family: $font-secundaria;
+        color: $color-dark;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: $color-text-muted;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}
+
+// Tarjetas Galería
+.item-galeria {
+    background-color: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: $sombra-md;
+    transition: transform $transicion-base, box-shadow $transicion-base;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        padding: 20px;
+        background-color: $color-surface;
+        transition: transform $transicion-base;
+    }
+
+    figcaption {
+        background-color: #f8fafc;
+        border-top: 1px solid $color-border;
+        padding: 12px 15px;
+        text-align: center;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: $color-text;
+    }
+}
