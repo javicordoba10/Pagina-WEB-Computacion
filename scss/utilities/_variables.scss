@@ -1,0 +1,33 @@
+// Variables de Colores
+$color-primary: #2563eb;
+$color-primary-hover: #1d4ed8;
+$color-dark: #0f172a;
+$color-dark-gradient: #1e293b;
+$color-bg: #f1f5f9;
+$color-surface: #ffffff;
+
+// Colores de Texto y Bordes
+$color-text: #334155;
+$color-text-muted: #64748b;
+$color-text-light: #cbd5e1;
+$color-border: #e2e8f0;
+$color-border-input: #cbd5e1;
+
+// Estados
+$color-success: #059669;
+$color-danger: #dc2626;
+
+// Tipografías
+$font-principal: 'Roboto', sans-serif;
+$font-secundaria: 'Montserrat', sans-serif;
+
+// Responsive
+$bp-tablet: 640px;
+$bp-desktop: 1024px;
+
+// Sombras y Transiciones
+$sombra-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$sombra-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+$sombra-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+$transicion-base: 0.25s ease;
+$transicion-boton: 250ms ease-out;

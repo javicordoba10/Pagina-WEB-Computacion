@@ -1,0 +1,33 @@
+.pie-pagina {
+    background-color: $color-dark;
+    color: $color-text-light;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+
+    .info-contacto {
+        font-family: $font-secundaria;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: $color-surface;
+        margin-bottom: 10px;
+    }
+
+    .lista-redes {
+        list-style: none;
+        @include flex-center;
+        gap: 20px;
+        margin-top: 10px;
+        padding: 0;
+
+        .logo-red {
+            width: 40px;
+            height: 40px;
+            transition: transform $transicion-base;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

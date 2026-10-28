@@ -1,0 +1,282 @@
+// Beneficios
+.seccion-comentario {
+    background: linear-gradient(135deg, $color-dark-gradient, $color-dark);
+    color: $color-surface;
+    padding: 16px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    animation: entradaSuave 450ms ease-out forwards;
+
+    .item-beneficio {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.95rem;
+        color: #e2e8f0;
+    }
+
+    .beneficio-envio::before {
+        content: "🚚";
+        font-size: 1.4rem;
+    }
+
+    .beneficio-cuotas::before {
+        content: "💳";
+        font-size: 1.4rem;
+    }
+
+    .beneficio-garantia::before {
+        content: "🛡️";
+        font-size: 1.4rem;
+    }
+}
+
+// Ofertas
+.seccion-ofertas {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.oferta-destacada {
+    background-color: $color-surface;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: $sombra-md;
+}
+
+.promociones-pago {
+    background-color: $color-surface;
+    border-left: 4px solid $color-success;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 25px;
+    box-shadow: $sombra-sm;
+}
+
+// Tabla comparativas
+.seccion-tabla {
+    margin: 40px 0;
+
+    p {
+        color: $color-text-muted;
+        margin-top: 6px;
+        margin-bottom: 20px;
+    }
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: $sombra-md;
+}
+
+.tabla-comparativa {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: $color-surface;
+    text-align: left;
+    font-size: 0.95rem;
+
+    caption {
+        caption-side: top;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $color-dark;
+        padding-bottom: 12px;
+        text-align: left;
+    }
+
+    thead tr {
+        background-color: $color-dark;
+        color: $color-surface;
+    }
+
+    th {
+        padding: 14px 18px;
+        font-weight: 600;
+    }
+
+    td {
+        padding: 12px 18px;
+        border-bottom: 1px solid $color-border;
+        color: $color-text;
+    }
+}
+
+// Galería
+.seccion-galeria {
+    margin-top: 30px;
+
+    > p {
+        color: $color-text-muted;
+        margin-top: 6px;
+        margin-bottom: 25px;
+    }
+}
+
+.categoria-galeria {
+    margin-bottom: 40px;
+
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $color-dark;
+        margin-bottom: 15px;
+        border-left: 4px solid $color-primary;
+        padding-left: 10px;
+    }
+}
+
+.grilla-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+// Nosotros
+.seccion-nosotros {
+    margin-top: 30px;
+}
+
+.ubicacion {
+    margin-top: 40px;
+    grid-area: mapa;
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 380px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        margin-top: 15px;
+    }
+}
+
+.seccion-video {
+    margin-top: 40px;
+
+    .video-oficinas {
+        width: 100%;
+        max-width: 850px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 12px;
+        border: 1px solid $color-border;
+        box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.12);
+        background-color: $color-dark;
+        outline: none;
+    }
+}
+
+// Contacto y Formulario
+.seccion-contacto {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "form"
+        "horarios"
+        "mapa";
+    margin-top: 25px;
+
+    @include desktop {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "form horarios"
+            "form mapa";
+        gap: 30px;
+    }
+}
+
+.formulario-contacto {
+    grid-area: form;
+    background-color: $color-surface;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: $sombra-md;
+
+    > p {
+        color: #475569;
+        margin-bottom: 25px;
+    }
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    label {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: $color-text;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 10px 14px;
+        border: 1px solid $color-border-input;
+        border-radius: 6px;
+        font-family: inherit;
+        font-size: 0.95rem;
+        background-color: #f8fafc;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+        &:focus {
+            outline: none;
+            border-color: $color-primary;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+            background-color: $color-surface;
+        }
+    }
+}
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.campo-suscripcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #475569;
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: $color-primary;
+        cursor: pointer;
+    }
+}
+
+.info-horarios {
+    grid-area: horarios;
+    background-color: $color-surface;
+    border-left: 4px solid $color-success;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: $sombra-sm;
+
+    h3 {
+        color: $color-dark;
+        margin-bottom: 6px;
+    }
+}
