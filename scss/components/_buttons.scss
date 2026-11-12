@@ -1,4 +1,16 @@
+
+%boton-base {
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: transform $transicion-boton, box-shadow $transicion-boton, background-color $transicion-boton;
+}
+
 .boton-compra {
+    @extend %boton-base;
     background-color: $color-primary;
     color: $color-surface;
     border: none;
@@ -24,6 +36,7 @@
 }
 
 .boton-formulario {
+    @extend %boton-base;
     color: $color-surface;
     background-color: $color-primary;
     border: none;
