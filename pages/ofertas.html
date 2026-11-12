@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="description" content="Aprovecha los mejores descuentos en computadoras, componentes de PC, placas de video y notebooks. Envío rápido y cuotas. ¡Ofertas por tiempo limitado!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://javicordoba10.github.io/Pagina-WEB-Computacion/">
@@ -66,7 +68,7 @@
             <h2>Ofertas Especiales y Promociones</h2>
             <p>Aprovecha los descuentos exclusivos por tiempo limitado en productos seleccionados.</p>
 
-            <div class="oferta-destacada">
+            <div class="oferta-destacada" data-aos="fade-up">
                 <h3>Descuentos de la Semana</h3>
                 <p>Hasta un 20% de descuento en notebooks de última generación y productos seleccionados.</p>
                 <!-- Aquí van los productos en oferta -->
@@ -159,5 +161,14 @@
         document.getElementById('year').textContent = new Date().getFullYear();   
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 400,
+            easing: 'ease-out',
+            once: true
+        });
+    </script>
 </body>
 </html>

@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="description" content="Conoce la historia de Mundo Tecnologico. Somos apasionados de la tecnología y especialistas en venta de computadoras, hardware y servicio técnico.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tudominio.com/pages/nosotros.html">
@@ -75,19 +77,19 @@
             <div class="row g-4">
                 
                 <div class="col-12 col-md-4">
-                    <div class="card h-100 tarjeta-nosotros">
+                    <div class="card h-100 tarjeta-nosotros" data-aos="fade-up" data-aos-delay="100">
                         <h3>🎯 Nuestra Misión</h3>
                         <p>Brindar productos de alta calidad garantizando la mejor experiencia de compra.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card h-100 tarjeta-nosotros">
+                    <div class="card h-100 tarjeta-nosotros" data-aos="fade-up" data-aos-delay="200">
                         <h3>🚀 Nuestra Visión</h3>
                         <p>Convertirnos en la tienda de tecnología de referencia en la región.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card h-100 tarjeta-nosotros">
+                    <div class="card h-100 tarjeta-nosotros" data-aos="fade-up" data-aos-delay="300">
                         <h3>👥 Nuestro Equipo</h3>
                         <p>Contamos con un equipo de profesionales apasionados por la innovación y la atención personalizada.</p>
                     </div>
@@ -95,7 +97,7 @@
             </div>
         </section>
 
-        <section class="seccion-video my-5">
+        <section class="seccion-video my-5" data-aos="fade-up" data-aos-delay="100">
             <h2>Nuestras Oficinas</h2>
             <p class="bajada-seccion">Descubre nuestro lugar de trabajo.</p>
             <video muted controls class="video-oficinas">
@@ -130,5 +132,14 @@
         document.getElementById('year').textContent = new Date().getFullYear();   
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 400,
+            easing: 'ease-out',
+            once: true
+        });
+    </script>
 </body>
 </html>
