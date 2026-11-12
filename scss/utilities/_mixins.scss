@@ -23,3 +23,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+// Mixin para Flexbox
+@mixin flex-direccion($direccion: row, $justificado: space-between, $alineado: center) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificado;
+    align-items: $alineado;
+}
