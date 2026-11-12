@@ -19,7 +19,7 @@
         align-items: center;
         gap: 10px;
         font-size: 0.95rem;
-        color: #e2e8f0;
+        color: $color-border-claro;
     }
 
     .beneficio-envio::before {
@@ -206,7 +206,7 @@
     box-shadow: $sombra-md;
 
     > p {
-        color: #475569;
+        color: $color-text-secundario;
         margin-bottom: 25px;
     }
 }
@@ -236,7 +236,7 @@
         border-radius: 6px;
         font-family: inherit;
         font-size: 0.95rem;
-        background-color: #f8fafc;
+        background-color: $color-surface-claro;
         transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
         &:focus {
@@ -257,7 +257,7 @@
     align-items: center;
     gap: 10px;
     font-size: 0.9rem;
-    color: #475569;
+    color: $color-text-secundario;
 
     input[type="checkbox"] {
         width: 18px;
